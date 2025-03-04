@@ -1,0 +1,34 @@
+body {
+    background-color: #f4f4f9; /* Light gray background */
+    font-family: Arial, sans-serif; /* Clean and readable font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the iFrame */
+iframe {
+    width: 90vw; /* 90% of the viewport width */
+    height: 90vh; /* 90% of the viewport height */
+    border: 3px solid #ccc; /* Light border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover effect */
+iframe:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    transform: scale(1.02); /* Slight zoom effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    iframe {
+        width: 100vw; /* Full width on smaller screens */
+        height: 80vh; /* Adjusted height for smaller screens */
+    }
+}
